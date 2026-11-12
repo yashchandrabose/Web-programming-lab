@@ -1,0 +1,34 @@
+<html>
+<head>
+    <title>Mouse Event</title>
+</head>
+
+<body style="text-align: center;">
+
+    <h2>Mouse Handling</h2>
+
+    <img
+        id="img-tag"
+        src="butterfly.avif"
+        onmouseover="changeImg()"
+        onmouseout="setOld()"
+        width="220px"
+        height="230px"
+        alt="image"
+    />
+
+    <script>
+        function changeImg() {
+            document.getElementById("img-tag").src =
+                "bat.webp";
+        }
+
+        function setOld() {
+            document.getElementById("img-tag").src =
+                "butterfly.avif";
+        }
+    </script>
+
+</body>
+</html>
+
